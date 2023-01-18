@@ -9,18 +9,18 @@
 import SwiftUI
 
 struct Home: View {
-  var body: some View {
-      VStack {
-          ProductRow(product: productSamples[0])
-          ProductRow(product: productSamples[1])
-          ProductRow(product: productSamples[2])
-      }
+    let store: Store
     
-  }
+    var body: some View {
+        List(store.products) { product in
+            ProductRow(product: product)
+        }
+    }
 }
 
 struct Home_Previews: PreviewProvider {
-  static var previews: some View {
-    Home()
-  }
+    static var previews: some View {
+        Home(store: Store())
+    }
 }
+
