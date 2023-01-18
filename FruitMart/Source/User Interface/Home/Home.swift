@@ -9,10 +9,14 @@
 import SwiftUI
 
 struct Home: View {
-    let store: Store
+    let viewModel: HomeViewModel
+    
+    init(viewModel: HomeViewModel) {
+        self.viewModel = viewModel
+    }
     
     var body: some View {
-        List(store.products) { product in
+        List(viewModel.fetch()) { product in
             ProductRow(product: product)
         }
     }
@@ -20,7 +24,13 @@ struct Home: View {
 
 struct Home_Previews: PreviewProvider {
     static var previews: some View {
-        Home(store: Store())
+        Home(
+            viewModel: HomeViewModel(
+                productService: ProductService(
+                    clientPort: FileProductClientAdapter(filename: "ProductData.json")
+                )
+            )
+        )
     }
 }
 
