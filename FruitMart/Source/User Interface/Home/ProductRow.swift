@@ -20,7 +20,7 @@ struct ProductRow: View {
         HStack {
             productImage
             productDescription
-        }.frame(height: 150)
+        }.frame(height: 130)
             .background(Color.primary.colorInvert())
             .cornerRadius(6)
             .shadow(color: Color.primaryShadow, radius: 1, x: 2, y: 2)
@@ -37,7 +37,7 @@ private extension ProductRow {
         Image(product.imageName)
             .resizable()
             .scaledToFill()
-            .frame(width: 140)
+            .frame(width: 120)
             .clipped()
     }
     

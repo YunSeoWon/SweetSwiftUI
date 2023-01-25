@@ -16,8 +16,13 @@ struct Home: View {
     }
     
     var body: some View {
-        List(viewModel.fetch()) { product in
-            ProductRow(product: product)
+        NavigationView {
+            List(viewModel.fetch()) { product in
+                NavigationLink(destination: Text("상세 정보")) {
+                    ProductRow(product: product)
+                }
+            }
+            .navigationBarTitle("과일마트")
         }
     }
 }
