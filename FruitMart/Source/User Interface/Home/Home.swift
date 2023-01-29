@@ -28,14 +28,15 @@ struct Home: View {
 }
 
 struct Home_Previews: PreviewProvider {
+    
     static var previews: some View {
-        Home(
+        Preview(source: Home(
             viewModel: HomeViewModel(
                 productService: ProductService(
                     clientPort: FileProductClientAdapter(filename: "ProductData.json")
                 )
             )
-        )
+        ))
     }
 }
 
