@@ -11,6 +11,7 @@ import Foundation
 
 struct ProductDetailView: View {
     let product: Product
+    @State private var quantity: Int = 1
     
     var body: some View {
         VStack(spacing: 0) {
@@ -69,11 +70,14 @@ struct ProductDetailView: View {
     }
     
     var priceInfo: some View {
-        HStack {
+        let price = quantity * product.price
+        
+        return HStack {
             (Text("₩")
-             + Text("\(product.price)").font(.title)
+             + Text("\(price)").font(.title)
             ).fontWeight(.medium)
             Spacer()
+            QuantitySelector(quantity: $quantity)
         }.foregroundColor(.black)
     }
     
