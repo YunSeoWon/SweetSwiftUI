@@ -18,10 +18,11 @@
 		CE061D332978474F00C19C9B /* ProductService.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE061D322978474F00C19C9B /* ProductService.swift */; };
 		CE061D35297847C100C19C9B /* ProductClientPort.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE061D34297847C100C19C9B /* ProductClientPort.swift */; };
 		CE061D37297848C800C19C9B /* FileProductClientAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE061D36297848C800C19C9B /* FileProductClientAdapter.swift */; };
-		CE061D3929784DF100C19C9B /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE061D3829784DF100C19C9B /* HomeViewModel.swift */; };
+		CE061D3929784DF100C19C9B /* ProductViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE061D3829784DF100C19C9B /* ProductViewModel.swift */; };
 		CE061D3E2978516700C19C9B /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE061D3D2978516700C19C9B /* Product.swift */; };
 		CE09537B298662AE0028D71D /* Preview.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE09537A298662AE0028D71D /* Preview.swift */; };
 		CEA77FF5298166FC00671FE9 /* ProductDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA77FF4298166FC00671FE9 /* ProductDetailView.swift */; };
+		CECC8DE6298E3B6A0091EFB7 /* FavoriteButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = CECC8DE5298E3B6A0091EFB7 /* FavoriteButton.swift */; };
 		CED0F2DE297054EA00D9623F /* ProductRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED0F2DD297054EA00D9623F /* ProductRow.swift */; };
 		CED0F2E12970576600D9623F /* ColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED0F2E02970576600D9623F /* ColorExtension.swift */; };
 		CEF33CEC298D5B3000287AF2 /* QuantitySelector.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEF33CEB298D5B3000287AF2 /* QuantitySelector.swift */; };
@@ -41,10 +42,11 @@
 		CE061D322978474F00C19C9B /* ProductService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductService.swift; sourceTree = "<group>"; };
 		CE061D34297847C100C19C9B /* ProductClientPort.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductClientPort.swift; sourceTree = "<group>"; };
 		CE061D36297848C800C19C9B /* FileProductClientAdapter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileProductClientAdapter.swift; sourceTree = "<group>"; };
-		CE061D3829784DF100C19C9B /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
+		CE061D3829784DF100C19C9B /* ProductViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductViewModel.swift; sourceTree = "<group>"; };
 		CE061D3D2978516700C19C9B /* Product.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Product.swift; sourceTree = "<group>"; };
 		CE09537A298662AE0028D71D /* Preview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Preview.swift; sourceTree = "<group>"; };
 		CEA77FF4298166FC00671FE9 /* ProductDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductDetailView.swift; sourceTree = "<group>"; };
+		CECC8DE5298E3B6A0091EFB7 /* FavoriteButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteButton.swift; sourceTree = "<group>"; };
 		CED0F2DD297054EA00D9623F /* ProductRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductRow.swift; sourceTree = "<group>"; };
 		CED0F2E02970576600D9623F /* ColorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorExtension.swift; sourceTree = "<group>"; };
 		CEF33CEB298D5B3000287AF2 /* QuantitySelector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuantitySelector.swift; sourceTree = "<group>"; };
@@ -158,9 +160,10 @@
 			children = (
 				5238EACF240BAC920079E99D /* Home.swift */,
 				CED0F2DD297054EA00D9623F /* ProductRow.swift */,
-				CE061D3829784DF100C19C9B /* HomeViewModel.swift */,
+				CE061D3829784DF100C19C9B /* ProductViewModel.swift */,
 				CEA77FF4298166FC00671FE9 /* ProductDetailView.swift */,
 				CEF33CEB298D5B3000287AF2 /* QuantitySelector.swift */,
+				CECC8DE5298E3B6A0091EFB7 /* FavoriteButton.swift */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -290,6 +293,7 @@
 				CED0F2DE297054EA00D9623F /* ProductRow.swift in Sources */,
 				5238EACC240BAC920079E99D /* AppDelegate.swift in Sources */,
 				CE061D37297848C800C19C9B /* FileProductClientAdapter.swift in Sources */,
+				CECC8DE6298E3B6A0091EFB7 /* FavoriteButton.swift in Sources */,
 				5238EACE240BAC920079E99D /* SceneDelegate.swift in Sources */,
 				CE061D2C29783BFF00C19C9B /* BundleExtension.swift in Sources */,
 				CEA77FF5298166FC00671FE9 /* ProductDetailView.swift in Sources */,
@@ -297,7 +301,7 @@
 				CEF33CEC298D5B3000287AF2 /* QuantitySelector.swift in Sources */,
 				CE09537B298662AE0028D71D /* Preview.swift in Sources */,
 				5238EAD0240BAC920079E99D /* Home.swift in Sources */,
-				CE061D3929784DF100C19C9B /* HomeViewModel.swift in Sources */,
+				CE061D3929784DF100C19C9B /* ProductViewModel.swift in Sources */,
 				CED0F2E12970576600D9623F /* ColorExtension.swift in Sources */,
 				CE061D35297847C100C19C9B /* ProductClientPort.swift in Sources */,
 				CE061D332978474F00C19C9B /* ProductService.swift in Sources */,
@@ -436,16 +440,19 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"FruitMart/Preview Content\"";
+				DEVELOPMENT_TEAM = TQHLT3A3HC;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = "$(SRCROOT)/FruitMart/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = kr.giftbot.example.FruitMart;
+				PRODUCT_BUNDLE_IDENTIFIER = com.beer1.FruitMart;
 				PRODUCT_NAME = FruitMart;
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
@@ -457,6 +464,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"FruitMart/Preview Content\"";
+				DEVELOPMENT_TEAM = TQHLT3A3HC;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = "$(SRCROOT)/FruitMart/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (

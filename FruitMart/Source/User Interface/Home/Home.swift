@@ -9,18 +9,15 @@
 import SwiftUI
 
 struct Home: View {
-    let viewModel: HomeViewModel
-    
-    init(viewModel: HomeViewModel) {
-        self.viewModel = viewModel
-    }
+    @EnvironmentObject private var viewModel: ProductViewModel
     
     var body: some View {
         NavigationView {
-            List(viewModel.fetch()) { product in
+            List(viewModel.products) { product in
                 NavigationLink(destination: ProductDetailView(product: product)) {
                     ProductRow(product: product)
                 }
+                
             }
             .navigationBarTitle("과일마트")
         }
@@ -30,13 +27,16 @@ struct Home: View {
 struct Home_Previews: PreviewProvider {
     
     static var previews: some View {
-        Preview(source: Home(
-            viewModel: HomeViewModel(
-                productService: ProductService(
-                    clientPort: FileProductClientAdapter(filename: "ProductData.json")
+        Preview(
+            source: Home()
+                .environmentObject(
+                    ProductViewModel(
+                        productService: ProductService(
+                            clientPort: FileProductClientAdapter(filename: "ProductData.json")
+                        )
+                    )
                 )
-            )
-        ))
+        )
     }
 }
 

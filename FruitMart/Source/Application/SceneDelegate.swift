@@ -15,13 +15,14 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
   
   func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions) {
     
-    let rootView = Home(
-        viewModel: HomeViewModel(
-            productService: ProductService(
-                clientPort: FileProductClientAdapter(filename:"ProductData.json")
+    let rootView = Home()
+          .environmentObject(
+            ProductViewModel(
+                productService: ProductService(
+                    clientPort: FileProductClientAdapter(filename:"ProductData.json")
+                )
             )
-        )
-    )
+          )
     
     if let windowScene = scene as? UIWindowScene {
       let window = UIWindow(windowScene: windowScene)

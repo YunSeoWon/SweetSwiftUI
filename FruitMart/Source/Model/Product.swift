@@ -18,3 +18,4 @@ struct Product: Decodable {
 }
 
 extension Product: Identifiable {}
+extension Product: Equatable {}

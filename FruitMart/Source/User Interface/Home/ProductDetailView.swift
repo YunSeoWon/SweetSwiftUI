@@ -57,10 +57,8 @@ struct ProductDetailView: View {
                     .foregroundColor(.black)
                 
                 Spacer()
-                Image(systemName: "heart")
-                    .imageScale(.large)
-                    .foregroundColor(Color.peach)
-                    .frame(width: 32, height: 32)
+                
+                FavoriteButton(product: product)
             }
             
             Text(splitText(product.description))
