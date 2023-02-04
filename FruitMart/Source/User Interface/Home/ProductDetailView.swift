@@ -11,13 +11,19 @@ import Foundation
 
 struct ProductDetailView: View {
     let product: Product
+    
     @State private var quantity: Int = 1
+    @State private var showingAlert: Bool = false
+    @EnvironmentObject private var orderViewModel: OrderViewModel
     
     var body: some View {
         VStack(spacing: 0) {
             productImage
             orderView
         }.edgesIgnoringSafeArea(.top)
+            .alert(isPresented: $showingAlert) {
+                confirmAlert
+            }
     }
     
     var productImage: some View {
@@ -80,7 +86,7 @@ struct ProductDetailView: View {
     }
     
     var placeOrderButton: some View {
-        Button(action: { print("Button") }) {
+        Button(action: { self.showingAlert = true }) {
             Capsule()
                 .fill(Color.peach)
                 .frame(maxWidth: .infinity, minHeight: 30, maxHeight: 55)
@@ -89,6 +95,17 @@ struct ProductDetailView: View {
                 .foregroundColor(Color.white)
                 .padding(.vertical, 8)
         }
+    }
+    
+    var confirmAlert: Alert {
+        Alert(
+            title: Text("주문 확인"),
+            message: Text("\(product.name)을(를) \(quantity)개 구매하겠습니까?"),
+            primaryButton: .default(Text("확인"), action: {
+                orderViewModel.order(product: product, quantity: quantity)
+            }),
+            secondaryButton: .cancel(Text("취소"))
+        )
     }
     
     func splitText(_ text: String) -> String {

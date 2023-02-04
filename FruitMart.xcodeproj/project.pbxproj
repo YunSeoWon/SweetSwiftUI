@@ -23,6 +23,11 @@
 		CE09537B298662AE0028D71D /* Preview.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE09537A298662AE0028D71D /* Preview.swift */; };
 		CEA77FF5298166FC00671FE9 /* ProductDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA77FF4298166FC00671FE9 /* ProductDetailView.swift */; };
 		CECC8DE6298E3B6A0091EFB7 /* FavoriteButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = CECC8DE5298E3B6A0091EFB7 /* FavoriteButton.swift */; };
+		CECC8DE8298E462E0091EFB7 /* Order.swift in Sources */ = {isa = PBXBuildFile; fileRef = CECC8DE7298E462E0091EFB7 /* Order.swift */; };
+		CECC8DEA298E48770091EFB7 /* OrderService.swift in Sources */ = {isa = PBXBuildFile; fileRef = CECC8DE9298E48770091EFB7 /* OrderService.swift */; };
+		CECC8DEC298E48A40091EFB7 /* OrderClientPort.swift in Sources */ = {isa = PBXBuildFile; fileRef = CECC8DEB298E48A40091EFB7 /* OrderClientPort.swift */; };
+		CECC8DEE298E49250091EFB7 /* NoopOrderClientAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CECC8DED298E49250091EFB7 /* NoopOrderClientAdapter.swift */; };
+		CECC8DF2298E4AA50091EFB7 /* OrderViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CECC8DF1298E4AA50091EFB7 /* OrderViewModel.swift */; };
 		CED0F2DE297054EA00D9623F /* ProductRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED0F2DD297054EA00D9623F /* ProductRow.swift */; };
 		CED0F2E12970576600D9623F /* ColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED0F2E02970576600D9623F /* ColorExtension.swift */; };
 		CEF33CEC298D5B3000287AF2 /* QuantitySelector.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEF33CEB298D5B3000287AF2 /* QuantitySelector.swift */; };
@@ -47,6 +52,11 @@
 		CE09537A298662AE0028D71D /* Preview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Preview.swift; sourceTree = "<group>"; };
 		CEA77FF4298166FC00671FE9 /* ProductDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductDetailView.swift; sourceTree = "<group>"; };
 		CECC8DE5298E3B6A0091EFB7 /* FavoriteButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteButton.swift; sourceTree = "<group>"; };
+		CECC8DE7298E462E0091EFB7 /* Order.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Order.swift; sourceTree = "<group>"; };
+		CECC8DE9298E48770091EFB7 /* OrderService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderService.swift; sourceTree = "<group>"; };
+		CECC8DEB298E48A40091EFB7 /* OrderClientPort.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderClientPort.swift; sourceTree = "<group>"; };
+		CECC8DED298E49250091EFB7 /* NoopOrderClientAdapter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoopOrderClientAdapter.swift; sourceTree = "<group>"; };
+		CECC8DF1298E4AA50091EFB7 /* OrderViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderViewModel.swift; sourceTree = "<group>"; };
 		CED0F2DD297054EA00D9623F /* ProductRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductRow.swift; sourceTree = "<group>"; };
 		CED0F2E02970576600D9623F /* ColorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorExtension.swift; sourceTree = "<group>"; };
 		CEF33CEB298D5B3000287AF2 /* QuantitySelector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuantitySelector.swift; sourceTree = "<group>"; };
@@ -151,6 +161,7 @@
 			isa = PBXGroup;
 			children = (
 				CE061D3D2978516700C19C9B /* Product.swift */,
+				CECC8DE7298E462E0091EFB7 /* Order.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -161,6 +172,7 @@
 				5238EACF240BAC920079E99D /* Home.swift */,
 				CED0F2DD297054EA00D9623F /* ProductRow.swift */,
 				CE061D3829784DF100C19C9B /* ProductViewModel.swift */,
+				CECC8DF1298E4AA50091EFB7 /* OrderViewModel.swift */,
 				CEA77FF4298166FC00671FE9 /* ProductDetailView.swift */,
 				CEF33CEB298D5B3000287AF2 /* QuantitySelector.swift */,
 				CECC8DE5298E3B6A0091EFB7 /* FavoriteButton.swift */,
@@ -181,6 +193,7 @@
 			isa = PBXGroup;
 			children = (
 				CE061D34297847C100C19C9B /* ProductClientPort.swift */,
+				CECC8DEB298E48A40091EFB7 /* OrderClientPort.swift */,
 			);
 			path = Ports;
 			sourceTree = "<group>";
@@ -189,6 +202,7 @@
 			isa = PBXGroup;
 			children = (
 				CE061D36297848C800C19C9B /* FileProductClientAdapter.swift */,
+				CECC8DED298E49250091EFB7 /* NoopOrderClientAdapter.swift */,
 			);
 			path = Adapters;
 			sourceTree = "<group>";
@@ -197,6 +211,7 @@
 			isa = PBXGroup;
 			children = (
 				CE061D322978474F00C19C9B /* ProductService.swift */,
+				CECC8DE9298E48770091EFB7 /* OrderService.swift */,
 			);
 			path = Domain;
 			sourceTree = "<group>";
@@ -292,8 +307,12 @@
 			files = (
 				CED0F2DE297054EA00D9623F /* ProductRow.swift in Sources */,
 				5238EACC240BAC920079E99D /* AppDelegate.swift in Sources */,
+				CECC8DE8298E462E0091EFB7 /* Order.swift in Sources */,
 				CE061D37297848C800C19C9B /* FileProductClientAdapter.swift in Sources */,
+				CECC8DEA298E48770091EFB7 /* OrderService.swift in Sources */,
+				CECC8DEE298E49250091EFB7 /* NoopOrderClientAdapter.swift in Sources */,
 				CECC8DE6298E3B6A0091EFB7 /* FavoriteButton.swift in Sources */,
+				CECC8DF2298E4AA50091EFB7 /* OrderViewModel.swift in Sources */,
 				5238EACE240BAC920079E99D /* SceneDelegate.swift in Sources */,
 				CE061D2C29783BFF00C19C9B /* BundleExtension.swift in Sources */,
 				CEA77FF5298166FC00671FE9 /* ProductDetailView.swift in Sources */,
@@ -302,6 +321,7 @@
 				CE09537B298662AE0028D71D /* Preview.swift in Sources */,
 				5238EAD0240BAC920079E99D /* Home.swift in Sources */,
 				CE061D3929784DF100C19C9B /* ProductViewModel.swift in Sources */,
+				CECC8DEC298E48A40091EFB7 /* OrderClientPort.swift in Sources */,
 				CED0F2E12970576600D9623F /* ColorExtension.swift in Sources */,
 				CE061D35297847C100C19C9B /* ProductClientPort.swift in Sources */,
 				CE061D332978474F00C19C9B /* ProductService.swift in Sources */,

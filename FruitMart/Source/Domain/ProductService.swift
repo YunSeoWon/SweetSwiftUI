@@ -6,8 +6,6 @@
 //  Copyright © 2023 Giftbot. All rights reserved.
 //
 
-import Foundation
-
 class ProductService {
     
     private let clientPort: ProductClientPort

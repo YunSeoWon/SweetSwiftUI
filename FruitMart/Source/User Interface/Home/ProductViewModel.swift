@@ -11,16 +11,16 @@ import Foundation
 class ProductViewModel: ObservableObject {
     @Published private(set) var products: [Product] = []
     
-    private let productService: ProductService
+    private let service: ProductService
     
-    init(productService: ProductService) {
-        self.productService = productService
+    init(service: ProductService) {
+        self.service = service
         
         self.fetch()
     }
     
     func fetch() {
-        self.products = productService.getAll()
+        self.products = service.getAll()
     }
     
     func toggleFavorite(of product: Product) {

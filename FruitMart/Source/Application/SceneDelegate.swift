@@ -18,8 +18,15 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
     let rootView = Home()
           .environmentObject(
             ProductViewModel(
-                productService: ProductService(
+                service: ProductService(
                     clientPort: FileProductClientAdapter(filename:"ProductData.json")
+                )
+            )
+          )
+          .environmentObject(
+            OrderViewModel(
+                service: OrderService(
+                    clientPort: NoopOrderClientAdapter()
                 )
             )
           )

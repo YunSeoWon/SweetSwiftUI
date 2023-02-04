@@ -31,9 +31,14 @@ struct Home_Previews: PreviewProvider {
             source: Home()
                 .environmentObject(
                     ProductViewModel(
-                        productService: ProductService(
+                        service: ProductService(
                             clientPort: FileProductClientAdapter(filename: "ProductData.json")
                         )
+                    )
+                )
+                .environmentObject(
+                    OrderViewModel(
+                        service: OrderService(clientPort: NoopOrderClientAdapter())
                     )
                 )
         )
