@@ -14,8 +14,10 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
   
   
   func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions) {
+      configureAppearance()
     
     let rootView = Home()
+          .accentColor(Color.primary)
           .environmentObject(
             ProductViewModel(
                 service: ProductService(
@@ -38,4 +40,14 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
       window.makeKeyAndVisible()
     }
   }
+    
+    private func configureAppearance() {
+        UINavigationBar.appearance().largeTitleTextAttributes = [
+            .foregroundColor: UIColor(named: "peach")!
+        ]
+        
+        UINavigationBar.appearance().titleTextAttributes = [
+            .foregroundColor: UIColor(named: "peach")
+        ]
+    }
 }
