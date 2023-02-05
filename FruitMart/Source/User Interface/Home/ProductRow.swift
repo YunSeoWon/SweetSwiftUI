@@ -15,6 +15,10 @@ import SwiftUI
 struct ProductRow: View {
     
     let product: Product
+    @EnvironmentObject var orderViewModel: OrderViewModel
+    
+    // 팝업창 띄우게 할 용도. nil이면 팝업창 꺼지고, 아니면 켜짐
+    @Binding var quickOrder: Product?
     
     var body: some View {
         HStack {
@@ -25,6 +29,11 @@ struct ProductRow: View {
             .cornerRadius(6)
             .shadow(color: Color.primaryShadow, radius: 1, x: 2, y: 2)
             .padding(.vertical, 8)
+    }
+    
+    func orderProduct() {
+        quickOrder = product
+        orderViewModel.order(product: product, quantity: 1)
     }
 }
 
@@ -69,6 +78,7 @@ private extension ProductRow {
             
             Symbol("cart", color: Color.peach)
                 .frame(width: 32, height: 32)
+                .onTapGesture { self.orderProduct() }
         }
     }
 }
@@ -78,9 +88,9 @@ struct ProductRow_Previews: PreviewProvider {
     static var previews: some View {
         Group {
           ForEach(productSamples) {
-            ProductRow(product: $0)
+              ProductRow(product: $0, quickOrder: .constant(nil))
           }
-          ProductRow(product: productSamples[0])
+          ProductRow(product: productSamples[0], quickOrder: .constant(nil))
             .preferredColorScheme(.dark)
         }
         .padding()

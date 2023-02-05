@@ -124,3 +124,26 @@ extension View {
         }
     }
 }
+
+extension View {
+    func popupOverContext<Item: Identifiable, Content: View>(
+        item: Binding<Item?>,
+        size: CGSize? = nil,
+        style: PopupStyle = .none,
+        ignoringEdges edges: Edge.Set = .all,
+        @ViewBuilder content: (Item) -> Content
+    ) -> some View {
+        let isNonNil = item.wrappedValue != nil
+        
+        return ZStack {
+            self.blur(radius: isNonNil && style == .blur ? 2 : 0)
+            
+            if isNonNil {
+                Color.black
+                    .luminanceToAlpha() // 휘도를 투명도와 연결해주는 수식어
+                    .popup(item: item, size: size, style: style, content: content)
+                    .edgesIgnoringSafeArea(edges)
+            }
+        }
+    }
+}
