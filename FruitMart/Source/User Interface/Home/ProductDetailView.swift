@@ -14,16 +14,21 @@ struct ProductDetailView: View {
     
     @State private var quantity: Int = 1
     @State private var showingAlert: Bool = false
+    @State private var showingPopup: Bool = false
     @EnvironmentObject private var orderViewModel: OrderViewModel
     
     var body: some View {
         VStack(spacing: 0) {
             productImage
             orderView
-        }.edgesIgnoringSafeArea(.top)
-            .alert(isPresented: $showingAlert) {
-                confirmAlert
-            }
+        }
+        .popup(isPresented: $showingPopup, style: .dimmed) {
+            OrderCompletedMessage()
+        }
+        .edgesIgnoringSafeArea(.top)
+        .alert(isPresented: $showingAlert) {
+            confirmAlert
+        }
     }
     
     var productImage: some View {
@@ -101,10 +106,15 @@ struct ProductDetailView: View {
             title: Text("주문 확인"),
             message: Text("\(product.name)을(를) \(quantity)개 구매하겠습니까?"),
             primaryButton: .default(Text("확인"), action: {
-                orderViewModel.order(product: product, quantity: quantity)
+                self.placeOrder()
             }),
             secondaryButton: .cancel(Text("취소"))
         )
+    }
+    
+    private func placeOrder() {
+        orderViewModel.order(product: product, quantity: quantity)
+        showingPopup = true
     }
     
     func splitText(_ text: String) -> String {

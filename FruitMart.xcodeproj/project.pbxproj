@@ -24,6 +24,8 @@
 		CE8FEBA0298FBC840010E174 /* Symbol.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE8FEB9F298FBC840010E174 /* Symbol.swift */; };
 		CE8FEBA2298FBD7E0010E174 /* ResizedImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE8FEBA1298FBD7D0010E174 /* ResizedImage.swift */; };
 		CE8FEBA4298FC1790010E174 /* ShrinkButtonStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE8FEBA3298FC1790010E174 /* ShrinkButtonStyle.swift */; };
+		CE8FEBA8298FC2AE0010E174 /* Popup.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE8FEBA7298FC2AE0010E174 /* Popup.swift */; };
+		CE8FEBAA298FD8CC0010E174 /* OrderCompletedMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE8FEBA9298FD8CC0010E174 /* OrderCompletedMessage.swift */; };
 		CEA77FF5298166FC00671FE9 /* ProductDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA77FF4298166FC00671FE9 /* ProductDetailView.swift */; };
 		CECC8DE6298E3B6A0091EFB7 /* FavoriteButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = CECC8DE5298E3B6A0091EFB7 /* FavoriteButton.swift */; };
 		CECC8DE8298E462E0091EFB7 /* Order.swift in Sources */ = {isa = PBXBuildFile; fileRef = CECC8DE7298E462E0091EFB7 /* Order.swift */; };
@@ -56,6 +58,8 @@
 		CE8FEB9F298FBC840010E174 /* Symbol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Symbol.swift; sourceTree = "<group>"; };
 		CE8FEBA1298FBD7D0010E174 /* ResizedImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResizedImage.swift; sourceTree = "<group>"; };
 		CE8FEBA3298FC1790010E174 /* ShrinkButtonStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShrinkButtonStyle.swift; sourceTree = "<group>"; };
+		CE8FEBA7298FC2AE0010E174 /* Popup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Popup.swift; sourceTree = "<group>"; };
+		CE8FEBA9298FD8CC0010E174 /* OrderCompletedMessage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderCompletedMessage.swift; sourceTree = "<group>"; };
 		CEA77FF4298166FC00671FE9 /* ProductDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductDetailView.swift; sourceTree = "<group>"; };
 		CECC8DE5298E3B6A0091EFB7 /* FavoriteButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteButton.swift; sourceTree = "<group>"; };
 		CECC8DE7298E462E0091EFB7 /* Order.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Order.swift; sourceTree = "<group>"; };
@@ -182,6 +186,7 @@
 				CEA77FF4298166FC00671FE9 /* ProductDetailView.swift */,
 				CEF33CEB298D5B3000287AF2 /* QuantitySelector.swift */,
 				CECC8DE5298E3B6A0091EFB7 /* FavoriteButton.swift */,
+				CE8FEBA9298FD8CC0010E174 /* OrderCompletedMessage.swift */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -189,6 +194,7 @@
 		5238EAEC240BF9FE0079E99D /* Helper */ = {
 			isa = PBXGroup;
 			children = (
+				CE8FEBA6298FC29B0010E174 /* ViewModifier */,
 				CE8FEBA5298FC26C0010E174 /* CustomStyle */,
 				CE095379298662200028D71D /* CustomView */,
 				CED0F2DF2970574F00D9623F /* Extension */,
@@ -239,6 +245,14 @@
 				CE8FEBA3298FC1790010E174 /* ShrinkButtonStyle.swift */,
 			);
 			path = CustomStyle;
+			sourceTree = "<group>";
+		};
+		CE8FEBA6298FC29B0010E174 /* ViewModifier */ = {
+			isa = PBXGroup;
+			children = (
+				CE8FEBA7298FC2AE0010E174 /* Popup.swift */,
+			);
+			path = ViewModifier;
 			sourceTree = "<group>";
 		};
 		CED0F2DF2970574F00D9623F /* Extension */ = {
@@ -330,6 +344,7 @@
 				CECC8DEE298E49250091EFB7 /* NoopOrderClientAdapter.swift in Sources */,
 				CECC8DE6298E3B6A0091EFB7 /* FavoriteButton.swift in Sources */,
 				CECC8DF2298E4AA50091EFB7 /* OrderViewModel.swift in Sources */,
+				CE8FEBAA298FD8CC0010E174 /* OrderCompletedMessage.swift in Sources */,
 				5238EACE240BAC920079E99D /* SceneDelegate.swift in Sources */,
 				CE061D2C29783BFF00C19C9B /* BundleExtension.swift in Sources */,
 				CE8FEBA2298FBD7E0010E174 /* ResizedImage.swift in Sources */,
@@ -340,6 +355,7 @@
 				CE09537B298662AE0028D71D /* Preview.swift in Sources */,
 				5238EAD0240BAC920079E99D /* Home.swift in Sources */,
 				CE061D3929784DF100C19C9B /* ProductViewModel.swift in Sources */,
+				CE8FEBA8298FC2AE0010E174 /* Popup.swift in Sources */,
 				CECC8DEC298E48A40091EFB7 /* OrderClientPort.swift in Sources */,
 				CE8FEBA4298FC1790010E174 /* ShrinkButtonStyle.swift in Sources */,
 				CED0F2E12970576600D9623F /* ColorExtension.swift in Sources */,
