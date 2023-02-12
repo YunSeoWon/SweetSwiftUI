@@ -36,6 +36,7 @@
 		CED0F2DE297054EA00D9623F /* ProductRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED0F2DD297054EA00D9623F /* ProductRow.swift */; };
 		CED0F2E12970576600D9623F /* ColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED0F2E02970576600D9623F /* ColorExtension.swift */; };
 		CEF33CEC298D5B3000287AF2 /* QuantitySelector.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEF33CEB298D5B3000287AF2 /* QuantitySelector.swift */; };
+		CEF77E092998A99E00570683 /* FavoriteProductScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEF77E082998A99E00570683 /* FavoriteProductScrollView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -70,6 +71,7 @@
 		CED0F2DD297054EA00D9623F /* ProductRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductRow.swift; sourceTree = "<group>"; };
 		CED0F2E02970576600D9623F /* ColorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorExtension.swift; sourceTree = "<group>"; };
 		CEF33CEB298D5B3000287AF2 /* QuantitySelector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuantitySelector.swift; sourceTree = "<group>"; };
+		CEF77E082998A99E00570683 /* FavoriteProductScrollView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteProductScrollView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -187,6 +189,7 @@
 				CEF33CEB298D5B3000287AF2 /* QuantitySelector.swift */,
 				CECC8DE5298E3B6A0091EFB7 /* FavoriteButton.swift */,
 				CE8FEBA9298FD8CC0010E174 /* OrderCompletedMessage.swift */,
+				CEF77E082998A99E00570683 /* FavoriteProductScrollView.swift */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -339,6 +342,7 @@
 				CED0F2DE297054EA00D9623F /* ProductRow.swift in Sources */,
 				5238EACC240BAC920079E99D /* AppDelegate.swift in Sources */,
 				CECC8DE8298E462E0091EFB7 /* Order.swift in Sources */,
+				CEF77E092998A99E00570683 /* FavoriteProductScrollView.swift in Sources */,
 				CE061D37297848C800C19C9B /* FileProductClientAdapter.swift in Sources */,
 				CECC8DEA298E48770091EFB7 /* OrderService.swift in Sources */,
 				CECC8DEE298E49250091EFB7 /* NoopOrderClientAdapter.swift in Sources */,

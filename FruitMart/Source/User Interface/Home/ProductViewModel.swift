@@ -11,6 +11,12 @@ import Foundation
 class ProductViewModel: ObservableObject {
     @Published private(set) var products: [Product] = []
     
+    var favoriteProducts: [Product] {
+        get {
+            products.filter { $0.isFavorite }
+        }
+    }
+    
     private let service: ProductService
     
     init(service: ProductService) {
