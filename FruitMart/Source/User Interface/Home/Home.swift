@@ -48,8 +48,19 @@ struct Home: View {
     
     private var productList: some View {
         List(viewModel.products) { product in
-            NavigationLink(destination: ProductDetailView(product: product)) {
+            let row = ZStack {
                 ProductRow(product: product, quickOrder: self.$quickOrder)
+                NavigationLink(destination: ProductDetailView(product: product)) {
+                    EmptyView()
+                }.opacity(0.0)
+            }.listRowBackground(Color.background)
+            
+            if #available(iOS 15.0, *) {
+                row.listRowSeparator(.hidden)
+            } else if #available(iOS 14.0, *) {
+                row.listStyle(SidebarListStyle())
+            } else {
+                row.onAppear { UITableView.appearance().separatorStyle = .none }
             }
         }
     }

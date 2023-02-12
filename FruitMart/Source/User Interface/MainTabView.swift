@@ -46,6 +46,10 @@ private extension MainTabView {
         Home()
             .tag(Tabs.home)
             .tabItem(image: "house", text: "홈")
+            .onAppear {
+                UITableView.appearance().separatorColor = .clear
+                UITableView.appearance().separatorStyle = .none
+            }
     }
     
     var recipe: some View {
