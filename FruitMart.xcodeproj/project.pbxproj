@@ -37,6 +37,7 @@
 		CED0F2E12970576600D9623F /* ColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED0F2E02970576600D9623F /* ColorExtension.swift */; };
 		CEF33CEC298D5B3000287AF2 /* QuantitySelector.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEF33CEB298D5B3000287AF2 /* QuantitySelector.swift */; };
 		CEF77E092998A99E00570683 /* FavoriteProductScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEF77E082998A99E00570683 /* FavoriteProductScrollView.swift */; };
+		CEF77E0B2998B4B900570683 /* MainTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEF77E0A2998B4B900570683 /* MainTabView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -72,6 +73,7 @@
 		CED0F2E02970576600D9623F /* ColorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorExtension.swift; sourceTree = "<group>"; };
 		CEF33CEB298D5B3000287AF2 /* QuantitySelector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuantitySelector.swift; sourceTree = "<group>"; };
 		CEF77E082998A99E00570683 /* FavoriteProductScrollView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteProductScrollView.swift; sourceTree = "<group>"; };
+		CEF77E0A2998B4B900570683 /* MainTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -147,6 +149,7 @@
 			isa = PBXGroup;
 			children = (
 				5238EAE5240BAE840079E99D /* Home */,
+				CEF77E0A2998B4B900570683 /* MainTabView.swift */,
 			);
 			path = "User Interface";
 			sourceTree = "<group>";
@@ -341,6 +344,7 @@
 			files = (
 				CED0F2DE297054EA00D9623F /* ProductRow.swift in Sources */,
 				5238EACC240BAC920079E99D /* AppDelegate.swift in Sources */,
+				CEF77E0B2998B4B900570683 /* MainTabView.swift in Sources */,
 				CECC8DE8298E462E0091EFB7 /* Order.swift in Sources */,
 				CEF77E092998A99E00570683 /* FavoriteProductScrollView.swift in Sources */,
 				CE061D37297848C800C19C9B /* FileProductClientAdapter.swift in Sources */,

@@ -16,8 +16,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
   func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions) {
       configureAppearance()
     
-    let rootView = Home()
-          .accentColor(Color.primary)
+    let rootView = MainTabView()
           .environmentObject(
             ProductViewModel(
                 service: ProductService(
