@@ -20,6 +20,8 @@ struct ProductRow: View {
     // 팝업창 띄우게 할 용도. nil이면 팝업창 꺼지고, 아니면 켜짐
     @Binding var quickOrder: Product?
     
+    @State private var willAppear: Bool = false
+    
     var body: some View {
         HStack {
             productImage
@@ -29,6 +31,9 @@ struct ProductRow: View {
             .cornerRadius(6)
             .shadow(color: Color.primaryShadow, radius: 1, x: 2, y: 2)
             .padding(.vertical, 8)
+            .opacity(willAppear ? 1 : 0)
+            .animation(.easeInOut(duration: 0.4))
+            .onAppear { self.willAppear = true }
     }
     
     func orderProduct() {
