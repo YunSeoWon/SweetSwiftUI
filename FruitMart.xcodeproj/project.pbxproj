@@ -21,6 +21,8 @@
 		CE061D3929784DF100C19C9B /* ProductViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE061D3829784DF100C19C9B /* ProductViewModel.swift */; };
 		CE061D3E2978516700C19C9B /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE061D3D2978516700C19C9B /* Product.swift */; };
 		CE09537B298662AE0028D71D /* Preview.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE09537A298662AE0028D71D /* Preview.swift */; };
+		CE88CE0B299FADAD00D0FF26 /* Recipe.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE88CE0A299FADAD00D0FF26 /* Recipe.swift */; };
+		CE88CE0E299FAED200D0FF26 /* RecipeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE88CE0D299FAED200D0FF26 /* RecipeView.swift */; };
 		CE8FEBA0298FBC840010E174 /* Symbol.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE8FEB9F298FBC840010E174 /* Symbol.swift */; };
 		CE8FEBA2298FBD7E0010E174 /* ResizedImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE8FEBA1298FBD7D0010E174 /* ResizedImage.swift */; };
 		CE8FEBA4298FC1790010E174 /* ShrinkButtonStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE8FEBA3298FC1790010E174 /* ShrinkButtonStyle.swift */; };
@@ -57,6 +59,8 @@
 		CE061D3829784DF100C19C9B /* ProductViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductViewModel.swift; sourceTree = "<group>"; };
 		CE061D3D2978516700C19C9B /* Product.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Product.swift; sourceTree = "<group>"; };
 		CE09537A298662AE0028D71D /* Preview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Preview.swift; sourceTree = "<group>"; };
+		CE88CE0A299FADAD00D0FF26 /* Recipe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Recipe.swift; sourceTree = "<group>"; };
+		CE88CE0D299FAED200D0FF26 /* RecipeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeView.swift; sourceTree = "<group>"; };
 		CE8FEB9F298FBC840010E174 /* Symbol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Symbol.swift; sourceTree = "<group>"; };
 		CE8FEBA1298FBD7D0010E174 /* ResizedImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResizedImage.swift; sourceTree = "<group>"; };
 		CE8FEBA3298FC1790010E174 /* ShrinkButtonStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShrinkButtonStyle.swift; sourceTree = "<group>"; };
@@ -148,6 +152,7 @@
 		5238EAE1240BAD5D0079E99D /* User Interface */ = {
 			isa = PBXGroup;
 			children = (
+				CE88CE0C299FAEC500D0FF26 /* Recipe */,
 				5238EAE5240BAE840079E99D /* Home */,
 				CEF77E0A2998B4B900570683 /* MainTabView.swift */,
 			);
@@ -177,6 +182,7 @@
 			children = (
 				CE061D3D2978516700C19C9B /* Product.swift */,
 				CECC8DE7298E462E0091EFB7 /* Order.swift */,
+				CE88CE0A299FADAD00D0FF26 /* Recipe.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -243,6 +249,14 @@
 				CE8FEBA1298FBD7D0010E174 /* ResizedImage.swift */,
 			);
 			path = CustomView;
+			sourceTree = "<group>";
+		};
+		CE88CE0C299FAEC500D0FF26 /* Recipe */ = {
+			isa = PBXGroup;
+			children = (
+				CE88CE0D299FAED200D0FF26 /* RecipeView.swift */,
+			);
+			path = Recipe;
 			sourceTree = "<group>";
 		};
 		CE8FEBA5298FC26C0010E174 /* CustomStyle */ = {
@@ -354,6 +368,7 @@
 				CECC8DF2298E4AA50091EFB7 /* OrderViewModel.swift in Sources */,
 				CE8FEBAA298FD8CC0010E174 /* OrderCompletedMessage.swift in Sources */,
 				5238EACE240BAC920079E99D /* SceneDelegate.swift in Sources */,
+				CE88CE0E299FAED200D0FF26 /* RecipeView.swift in Sources */,
 				CE061D2C29783BFF00C19C9B /* BundleExtension.swift in Sources */,
 				CE8FEBA2298FBD7E0010E174 /* ResizedImage.swift in Sources */,
 				CEA77FF5298166FC00671FE9 /* ProductDetailView.swift in Sources */,
@@ -365,6 +380,7 @@
 				CE061D3929784DF100C19C9B /* ProductViewModel.swift in Sources */,
 				CE8FEBA8298FC2AE0010E174 /* Popup.swift in Sources */,
 				CECC8DEC298E48A40091EFB7 /* OrderClientPort.swift in Sources */,
+				CE88CE0B299FADAD00D0FF26 /* Recipe.swift in Sources */,
 				CE8FEBA4298FC1790010E174 /* ShrinkButtonStyle.swift in Sources */,
 				CED0F2E12970576600D9623F /* ColorExtension.swift in Sources */,
 				CE061D35297847C100C19C9B /* ProductClientPort.swift in Sources */,
