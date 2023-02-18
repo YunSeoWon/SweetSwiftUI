@@ -29,6 +29,9 @@
 		CE8FEBA8298FC2AE0010E174 /* Popup.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE8FEBA7298FC2AE0010E174 /* Popup.swift */; };
 		CE8FEBAA298FD8CC0010E174 /* OrderCompletedMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE8FEBA9298FD8CC0010E174 /* OrderCompletedMessage.swift */; };
 		CEA77FF5298166FC00671FE9 /* ProductDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA77FF4298166FC00671FE9 /* ProductDetailView.swift */; };
+		CEC3E1A429A10601005A7877 /* Stripes.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEC3E1A329A10601005A7877 /* Stripes.swift */; };
+		CEC3E1A629A10821005A7877 /* ShapeClipModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEC3E1A529A10821005A7877 /* ShapeClipModifier.swift */; };
+		CEC3E1A829A10C6B005A7877 /* AnyTransitionExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEC3E1A729A10C6B005A7877 /* AnyTransitionExtension.swift */; };
 		CECC8DE6298E3B6A0091EFB7 /* FavoriteButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = CECC8DE5298E3B6A0091EFB7 /* FavoriteButton.swift */; };
 		CECC8DE8298E462E0091EFB7 /* Order.swift in Sources */ = {isa = PBXBuildFile; fileRef = CECC8DE7298E462E0091EFB7 /* Order.swift */; };
 		CECC8DEA298E48770091EFB7 /* OrderService.swift in Sources */ = {isa = PBXBuildFile; fileRef = CECC8DE9298E48770091EFB7 /* OrderService.swift */; };
@@ -67,6 +70,9 @@
 		CE8FEBA7298FC2AE0010E174 /* Popup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Popup.swift; sourceTree = "<group>"; };
 		CE8FEBA9298FD8CC0010E174 /* OrderCompletedMessage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderCompletedMessage.swift; sourceTree = "<group>"; };
 		CEA77FF4298166FC00671FE9 /* ProductDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductDetailView.swift; sourceTree = "<group>"; };
+		CEC3E1A329A10601005A7877 /* Stripes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Stripes.swift; sourceTree = "<group>"; };
+		CEC3E1A529A10821005A7877 /* ShapeClipModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShapeClipModifier.swift; sourceTree = "<group>"; };
+		CEC3E1A729A10C6B005A7877 /* AnyTransitionExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnyTransitionExtension.swift; sourceTree = "<group>"; };
 		CECC8DE5298E3B6A0091EFB7 /* FavoriteButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteButton.swift; sourceTree = "<group>"; };
 		CECC8DE7298E462E0091EFB7 /* Order.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Order.swift; sourceTree = "<group>"; };
 		CECC8DE9298E48770091EFB7 /* OrderService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderService.swift; sourceTree = "<group>"; };
@@ -247,6 +253,7 @@
 				CE09537A298662AE0028D71D /* Preview.swift */,
 				CE8FEB9F298FBC840010E174 /* Symbol.swift */,
 				CE8FEBA1298FBD7D0010E174 /* ResizedImage.swift */,
+				CEC3E1A329A10601005A7877 /* Stripes.swift */,
 			);
 			path = CustomView;
 			sourceTree = "<group>";
@@ -271,6 +278,7 @@
 			isa = PBXGroup;
 			children = (
 				CE8FEBA7298FC2AE0010E174 /* Popup.swift */,
+				CEC3E1A529A10821005A7877 /* ShapeClipModifier.swift */,
 			);
 			path = ViewModifier;
 			sourceTree = "<group>";
@@ -280,6 +288,7 @@
 			children = (
 				CED0F2E02970576600D9623F /* ColorExtension.swift */,
 				CE061D2B29783BFF00C19C9B /* BundleExtension.swift */,
+				CEC3E1A729A10C6B005A7877 /* AnyTransitionExtension.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -363,6 +372,7 @@
 				CEF77E092998A99E00570683 /* FavoriteProductScrollView.swift in Sources */,
 				CE061D37297848C800C19C9B /* FileProductClientAdapter.swift in Sources */,
 				CECC8DEA298E48770091EFB7 /* OrderService.swift in Sources */,
+				CEC3E1A829A10C6B005A7877 /* AnyTransitionExtension.swift in Sources */,
 				CECC8DEE298E49250091EFB7 /* NoopOrderClientAdapter.swift in Sources */,
 				CECC8DE6298E3B6A0091EFB7 /* FavoriteButton.swift in Sources */,
 				CECC8DF2298E4AA50091EFB7 /* OrderViewModel.swift in Sources */,
@@ -372,12 +382,14 @@
 				CE061D2C29783BFF00C19C9B /* BundleExtension.swift in Sources */,
 				CE8FEBA2298FBD7E0010E174 /* ResizedImage.swift in Sources */,
 				CEA77FF5298166FC00671FE9 /* ProductDetailView.swift in Sources */,
+				CEC3E1A429A10601005A7877 /* Stripes.swift in Sources */,
 				CE8FEBA0298FBC840010E174 /* Symbol.swift in Sources */,
 				CE061D3E2978516700C19C9B /* Product.swift in Sources */,
 				CEF33CEC298D5B3000287AF2 /* QuantitySelector.swift in Sources */,
 				CE09537B298662AE0028D71D /* Preview.swift in Sources */,
 				5238EAD0240BAC920079E99D /* Home.swift in Sources */,
 				CE061D3929784DF100C19C9B /* ProductViewModel.swift in Sources */,
+				CEC3E1A629A10821005A7877 /* ShapeClipModifier.swift in Sources */,
 				CE8FEBA8298FC2AE0010E174 /* Popup.swift in Sources */,
 				CECC8DEC298E48A40091EFB7 /* OrderClientPort.swift in Sources */,
 				CE88CE0B299FADAD00D0FF26 /* Recipe.swift in Sources */,
