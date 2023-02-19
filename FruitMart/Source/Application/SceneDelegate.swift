@@ -48,5 +48,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         UINavigationBar.appearance().titleTextAttributes = [
             .foregroundColor: UIColor(named: "peach")
         ]
+        
+        UISlider.appearance().thumbTintColor = UIColor(named: "peach")
     }
 }

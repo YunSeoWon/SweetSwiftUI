@@ -41,6 +41,8 @@
 		CED0F2DE297054EA00D9623F /* ProductRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED0F2DD297054EA00D9623F /* ProductRow.swift */; };
 		CED0F2E12970576600D9623F /* ColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED0F2E02970576600D9623F /* ColorExtension.swift */; };
 		CEF33CEC298D5B3000287AF2 /* QuantitySelector.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEF33CEB298D5B3000287AF2 /* QuantitySelector.swift */; };
+		CEF4E16229A268FD00518240 /* FruitCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEF4E16129A268FD00518240 /* FruitCard.swift */; };
+		CEF4E16429A2698500518240 /* ImageGallery.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEF4E16329A2698500518240 /* ImageGallery.swift */; };
 		CEF77E092998A99E00570683 /* FavoriteProductScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEF77E082998A99E00570683 /* FavoriteProductScrollView.swift */; };
 		CEF77E0B2998B4B900570683 /* MainTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEF77E0A2998B4B900570683 /* MainTabView.swift */; };
 /* End PBXBuildFile section */
@@ -82,6 +84,8 @@
 		CED0F2DD297054EA00D9623F /* ProductRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductRow.swift; sourceTree = "<group>"; };
 		CED0F2E02970576600D9623F /* ColorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorExtension.swift; sourceTree = "<group>"; };
 		CEF33CEB298D5B3000287AF2 /* QuantitySelector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuantitySelector.swift; sourceTree = "<group>"; };
+		CEF4E16129A268FD00518240 /* FruitCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FruitCard.swift; sourceTree = "<group>"; };
+		CEF4E16329A2698500518240 /* ImageGallery.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageGallery.swift; sourceTree = "<group>"; };
 		CEF77E082998A99E00570683 /* FavoriteProductScrollView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteProductScrollView.swift; sourceTree = "<group>"; };
 		CEF77E0A2998B4B900570683 /* MainTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -158,6 +162,7 @@
 		5238EAE1240BAD5D0079E99D /* User Interface */ = {
 			isa = PBXGroup;
 			children = (
+				CEF4E16029A268E000518240 /* ImageGallery */,
 				CE88CE0C299FAEC500D0FF26 /* Recipe */,
 				5238EAE5240BAE840079E99D /* Home */,
 				CEF77E0A2998B4B900570683 /* MainTabView.swift */,
@@ -293,6 +298,15 @@
 			path = Extension;
 			sourceTree = "<group>";
 		};
+		CEF4E16029A268E000518240 /* ImageGallery */ = {
+			isa = PBXGroup;
+			children = (
+				CEF4E16129A268FD00518240 /* FruitCard.swift */,
+				CEF4E16329A2698500518240 /* ImageGallery.swift */,
+			);
+			path = ImageGallery;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -369,6 +383,7 @@
 				5238EACC240BAC920079E99D /* AppDelegate.swift in Sources */,
 				CEF77E0B2998B4B900570683 /* MainTabView.swift in Sources */,
 				CECC8DE8298E462E0091EFB7 /* Order.swift in Sources */,
+				CEF4E16229A268FD00518240 /* FruitCard.swift in Sources */,
 				CEF77E092998A99E00570683 /* FavoriteProductScrollView.swift in Sources */,
 				CE061D37297848C800C19C9B /* FileProductClientAdapter.swift in Sources */,
 				CECC8DEA298E48770091EFB7 /* OrderService.swift in Sources */,
@@ -392,6 +407,7 @@
 				CEC3E1A629A10821005A7877 /* ShapeClipModifier.swift in Sources */,
 				CE8FEBA8298FC2AE0010E174 /* Popup.swift in Sources */,
 				CECC8DEC298E48A40091EFB7 /* OrderClientPort.swift in Sources */,
+				CEF4E16429A2698500518240 /* ImageGallery.swift in Sources */,
 				CE88CE0B299FADAD00D0FF26 /* Recipe.swift in Sources */,
 				CE8FEBA4298FC1790010E174 /* ShrinkButtonStyle.swift in Sources */,
 				CED0F2E12970576600D9623F /* ColorExtension.swift in Sources */,

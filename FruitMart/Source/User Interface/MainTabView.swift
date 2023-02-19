@@ -14,6 +14,7 @@ struct MainTabView: View {
     }
     
     @State private var selectedTab: Tabs = .home
+    @EnvironmentObject private var viewModel: ProductViewModel
     
     var body: some View {
         TabView(selection: $selectedTab) {
@@ -60,7 +61,7 @@ private extension MainTabView {
     }
     
     var imageGallery: some View {
-        Text("이미지 갤러리")
+        ImageGallery(viewModel: viewModel)
             .tag(Tabs.gallery)
             .tabItem(image: "photo.on.rectangle", text: "갤러리")
     }
