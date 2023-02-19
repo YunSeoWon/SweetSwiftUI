@@ -16,6 +16,7 @@ struct ProductRow: View {
     
     let product: Product
     @EnvironmentObject var orderViewModel: OrderViewModel
+    @EnvironmentObject var productViewModel: ProductViewModel
     
     // 팝업창 띄우게 할 용도. nil이면 팝업창 꺼지고, 아니면 켜짐
     @Binding var quickOrder: Product?
@@ -34,6 +35,7 @@ struct ProductRow: View {
             .opacity(willAppear ? 1 : 0)
             .animation(.easeInOut(duration: 0.4))
             .onAppear { self.willAppear = true }
+            .contextMenu { contextMenu }
     }
     
     func orderProduct() {
@@ -85,6 +87,23 @@ private extension ProductRow {
                 .frame(width: 32, height: 32)
                 .onTapGesture { self.orderProduct() }
         }
+    }
+    
+    var contextMenu: some View {
+        VStack {
+            Button(action: { self.toggleFavorite() }) {
+                Text("Toggle Favorite")
+                Symbol(self.product.isFavorite ? "heart.fill" : "heart")
+            }
+            Button(action: { self.orderProduct() }) {
+                Text("Order Product")
+                Symbol("cart")
+            }
+        }
+    }
+    
+    func toggleFavorite() {
+        self.productViewModel.toggleFavorite(of: product)
     }
 }
 
